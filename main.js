@@ -41,7 +41,9 @@ logFunc3("Hello from logFunc3");
 var logFunc4 = function (message) { return console.log(message); };
 logFunc4("Hello from logFunc4");
 var Point = /** @class */ (function () {
-    function Point() {
+    function Point(x, y) {
+        this.x = x;
+        this.y = y;
     }
     Point.prototype.draw = function () {
         console.log("X: " + this.x + ", Y: " + this.y);

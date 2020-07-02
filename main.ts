@@ -60,11 +60,16 @@ logFunc4("Hello from logFunc4");
 
 
 class Point {
-    x: Number;
-    y: Number;
+    x: number;
+    y: number;
 
     draw() {
         console.log("X: " + this.x + ", Y: " + this.y);
+    }
+
+    constructor(x?: number, y?: number) {
+        this.x = x;
+        this.y = y;
     }
 }
 
