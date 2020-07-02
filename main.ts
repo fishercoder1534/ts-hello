@@ -27,3 +27,17 @@ enum Color {
 let backgroundColor = Color.Red;
 
 console.log(backgroundColor)
+
+
+let message2;
+message2 = "abc";
+let endsWithC = (<string>message2).endsWith('c');//this is type assertion in TS
+console.log(endsWithC);
+
+
+
+
+
+
+
+console.log("Program finished.");
