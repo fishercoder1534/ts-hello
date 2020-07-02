@@ -37,6 +37,29 @@ console.log(endsWithC);
 
 
 
+// this is the traditional way of defining a function in JS
+let logFunc1 = function(message) {
+    console.log(message);
+}
+logFunc1("Hello from logFunc1");
+
+// but in TS, we could use arrow functions like below
+let logFunc2 = (message) => {
+    console.log(message);
+}
+logFunc2("Hello from logFunc2");
+
+// or even remove the curly brackets since there's only one line of logic for the function
+let logFunc3 = (message) => console.log(message);
+logFunc3("Hello from logFunc3");
+
+// or even remove the parenthesis for the paremeter, but this is not encouraged as it makes code less readable
+let logFunc4 = message => console.log(message);
+logFunc4("Hello from logFunc4");
+
+
+
+
 
 
 

@@ -23,7 +23,20 @@ console.log(backgroundColor);
 var message2;
 message2 = "abc";
 var endsWithC = message2.endsWith('c'); //this is type assertion in TS
-// let endsWithCAlternativeWay = (message2 as string).endsWith('c');//this is another way of doing type assertion in TS
 console.log(endsWithC);
-// console.log(endsWithCAlternativeWay);
+// this is the traditional way of defining a function in JS
+var logFunc1 = function (message) {
+    console.log(message);
+};
+logFunc1("Hello from logFunc1");
+// but in TS, we could use arrow functions like below
+var logFunc2 = function (message) {
+    console.log(message);
+};
+logFunc2("Hello from logFunc2");
+// or even remove the curly brackets since there's only one line of logic for the function
+var logFunc3 = function (message) { return console.log(message); };
+logFunc3("Hello from logFunc3");
+var logFunc4 = function (message) { return console.log(message); };
+logFunc4("Hello from logFunc4");
 console.log("Program finished.");
