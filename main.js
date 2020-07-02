@@ -37,6 +37,20 @@ logFunc2("Hello from logFunc2");
 // or even remove the curly brackets since there's only one line of logic for the function
 var logFunc3 = function (message) { return console.log(message); };
 logFunc3("Hello from logFunc3");
+// or even remove the parenthesis for the paremeter, but this is not encouraged as it makes code less readable
 var logFunc4 = function (message) { return console.log(message); };
 logFunc4("Hello from logFunc4");
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    Point.prototype.draw = function () {
+        console.log("X: " + this.x + ", Y: " + this.y);
+    };
+    return Point;
+}());
+var point = new Point();
+point.draw();
+point.x = 1;
+point.y = 2;
+point.draw();
 console.log("Program finished.");

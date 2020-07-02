@@ -59,6 +59,21 @@ logFunc4("Hello from logFunc4");
 
 
 
+class Point {
+    x: Number;
+    y: Number;
+
+    draw() {
+        console.log("X: " + this.x + ", Y: " + this.y);
+    }
+}
+
+let point = new Point();
+point.draw();
+point.x = 1;
+point.y = 2;
+point.draw();
+
 
 
 
