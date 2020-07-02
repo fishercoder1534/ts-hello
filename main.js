@@ -55,4 +55,19 @@ point.draw();
 point.x = 1;
 point.y = 2;
 point.draw();
+var Point2 = /** @class */ (function () {
+    // we don't need to explicitly declare fields in a class, TS will compile them based on the constructor we define
+    function Point2(x, y) {
+        this.x = x;
+        this.y = y;
+        this.x = x;
+        this.y = y;
+    }
+    Point2.prototype.draw = function () {
+        console.log("X: " + this.x + ", Y: " + this.y);
+    };
+    return Point2;
+}());
+var point2 = new Point2(3, 4);
+point2.draw();
 console.log("Program finished.");

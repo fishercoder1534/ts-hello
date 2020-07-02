@@ -79,6 +79,21 @@ point.x = 1;
 point.y = 2;
 point.draw();
 
+class Point2 {
+// we don't need to explicitly declare fields in a class, TS will compile them based on the constructor we define
+    constructor(private x?: number, private y?: number) {
+        this.x = x;
+        this.y = y;
+    }
+
+    draw() {
+        console.log("X: " + this.x + ", Y: " + this.y);
+    }
+}
+
+let point2 = new Point2(3, 4);
+point2.draw();
+
 
 
 
