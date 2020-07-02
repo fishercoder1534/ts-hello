@@ -15,3 +15,15 @@ function doThis() {
 }
 
 doThis();
+
+const Red = 0;
+const Blue = 1;
+
+enum Color {
+    Red,
+    Blue,
+}
+
+let backgroundColor = Color.Red;
+
+console.log(backgroundColor)
