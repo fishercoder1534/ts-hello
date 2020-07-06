@@ -66,8 +66,12 @@ var Point2 = /** @class */ (function () {
     Point2.prototype.draw = function () {
         console.log("X: " + this.x + ", Y: " + this.y);
     };
+    Point2.prototype.getX = function () {
+        return this.x;
+    };
     return Point2;
 }());
 var point2 = new Point2(3, 4);
 point2.draw();
+console.log("getX(): " + point2.getX());
 console.log("Program finished.");

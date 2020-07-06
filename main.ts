@@ -71,6 +71,7 @@ class Point {
         this.x = x;
         this.y = y;
     }
+
 }
 
 let point = new Point();
@@ -89,10 +90,15 @@ class Point2 {
     draw() {
         console.log("X: " + this.x + ", Y: " + this.y);
     }
+
+    getX() {
+        return this.x;
+    }
 }
 
 let point2 = new Point2(3, 4);
 point2.draw();
+console.log("getX(): " + point2.getX());
 
 
 
