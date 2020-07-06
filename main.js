@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 function logMsg(message) {
     console.log(message);
 }
@@ -55,23 +57,8 @@ point.draw();
 point.x = 1;
 point.y = 2;
 point.draw();
-var Point2 = /** @class */ (function () {
-    // we don't need to explicitly declare fields in a class, TS will compile them based on the constructor we define
-    function Point2(x, y) {
-        this.x = x;
-        this.y = y;
-        this.x = x;
-        this.y = y;
-    }
-    Point2.prototype.draw = function () {
-        console.log("X: " + this.x + ", Y: " + this.y);
-    };
-    Point2.prototype.getX = function () {
-        return this.x;
-    };
-    return Point2;
-}());
-var point2 = new Point2(3, 4);
+var point_1 = require("./point"); //it's not point.ts, but just point
+var point2 = new point_1.Point2(3, 4);
 point2.draw();
 console.log("getX(): " + point2.getX());
 console.log("Program finished.");
